@@ -1,21 +1,9 @@
 # ReScript Project Template
 
-The only official ReScript starter template.
+## Development
 
-## Installation
-
-```sh
-npm install
-```
+Run the `Dockerfile-dev` docker image.
 
 ## Build
 
-- Build: `npm run build`
-- Clean: `npm run clean`
-- Build & watch: `npm run start`
-
-## Run
-
-```sh
-node src/Demo.bs.js
-```
+TODO

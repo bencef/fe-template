@@ -1,0 +1,14 @@
+FROM node:15.2.1-buster
+
+WORKDIR /app
+
+RUN npm install -g rescript
+
+COPY package.json package.json
+COPY package-lock.json package-lock.json
+
+RUN npm ci
+
+COPY . .
+
+CMD [ "npx", "rescript", "build", "-w" ]

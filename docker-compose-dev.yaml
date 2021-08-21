@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  fe:
+    build:
+      context: .
+      dockerfile: Dockerfile-dev
+    volumes:
+      - type: bind
+        source: ./src
+        target: /app/src
+    ports:
+      - "3000:3000"
+    tty: true

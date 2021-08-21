@@ -8,7 +8,14 @@ type event // abstract type for an event
 
 module App = {
   @react.component
-  let make = () => <div> {React.string("Hello from app")} </div>
+  let make = () => {
+    let (clicks, setClicks) = React.useState(() => 0)
+    let increment = _event => setClicks(clicks => clicks+1)
+    <>
+      <div>{React.string("Hello from app, clicked: " ++ clicks->Belt.Int.toString)}</div>
+      <button onClick=increment>{"Increment"->React.string}</button>
+    </>
+  }
 }
 
 window->addEventListener("DOMContentLoaded", _event => {

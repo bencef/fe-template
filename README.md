@@ -21,4 +21,12 @@ Point a browser to http://localhost:3000/
 
 ## Build
 
-TODO
+Use the Dockerfile called `Dockerfile` it is known to work with the Heroku container registry.
+
+To run it locally on port `5000`:
+
+```sh
+# Build it
+docker build -t fe-template .
+docker run -e PORT=5000 -p 5000:5000 fe-template
+```

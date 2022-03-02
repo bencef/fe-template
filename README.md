@@ -28,5 +28,8 @@ To run it locally on port `5000`:
 ```sh
 # Build it
 docker build -t fe-template .
+# Run it in the foreground
 docker run -e PORT=5000 -p 5000:5000 fe-template
 ```
+
+NOTE: It won't write any output when it starts up

@@ -3,7 +3,7 @@
 ## Development
 
 Run the `Dockerfile-dev` docker image.
-- Map the inner ports 3000 and 5000 to some ports on the host
+- Map the inner port 3000 to some ports on the host
 - bind $ROOT/src to /app/src in the container
 - run `./dev.sh`
 

@@ -1,5 +1,5 @@
 {
-  "name": "glumeomap",
+  "name": "TODO",
   "version": "0.0.1",
   "scripts": {
     "build": "rescript",
@@ -18,6 +18,7 @@
   "devDependencies": {
     "moduleserve": "^0.9.1",
     "webpack": "^5.49.0",
-    "webpack-cli": "^4.7.2"
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^4.9.0"
   }
 }

@@ -15,9 +15,7 @@ docker-compose -f docker-compose-dev.yaml up
 
 will achieve the same.
 
-It maps ports `3000` to `3000` and `5000` to `5000`
-
-NOTE: port `5000` is used for the auto-reload websocket.
+It maps ports `3000` to `3000`
 
 Point a browser to http://localhost:3000/
 

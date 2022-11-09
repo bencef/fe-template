@@ -7,9 +7,6 @@ COPY package-lock.json package-lock.json
 
 RUN npm ci
 
-# TODO: Remove this once this is fixed upstream
-RUN sed -i '/process_argv\[wsParamIndex/s/process_argv/delegate_args/' /app/node_modules/rescript/rescript
-
 COPY . .
 
 CMD [ "/app/dev.sh" ]

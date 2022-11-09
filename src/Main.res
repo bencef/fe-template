@@ -33,5 +33,9 @@ module App = {
 }
 
 window->addEventListener("DOMContentLoaded", _event => {
-  doc->getElementById("app")->Belt.Option.map(element => ReactDOM.render(<App />, element))->ignore
+  doc->getElementById("app")->Belt.Option.map(element => {
+    open ReactDOM.Client
+    let root = createRoot(element)
+    root->Root.render(<App />)
+  })->ignore
 })
